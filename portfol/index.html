@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun S Kushwah | Designer & Developer Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="hero">
+            <div class="hero-text">
+                <h1>Hi, I'm Arun S Kushwah</h1>
+                <p class="subtitle">UI/UX, Graphic &amp; Web Designer</p>
+                <a href="#" class="cta-button" id="contactBtn">Contact Me</a>
+            </div>
+            <div class="hero-image">
+                <img src="profile-pic.jpg" alt="Arun S Kushwah">
+            </div>
+        </header>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="contact-options">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out via these channels:</p>
+                <a href="https://wa.me/918490033932" class="contact-btn whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="tel:+916351488591" class="contact-btn phone-btn">
+                    <i class="fas fa-phone"></i> Phone
+                </a>
+                <a href="mailto:arunkushavah@gmail.com" class="contact-btn email-btn">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2><i class="fas fa-circle-info"></i> About Me</h2>
+        <p>
+            I have just completed a Frontend Web Development course and am currently learning Backend
+            Development. As a fresher, I am seeking a role which allows me to continue learning and
+            perfecting my skills while providing high-quality work. My goal is to apply my knowledge in
+            both creative design and technical development to build exceptional web experiences.
+        </p>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education">
+        <h2><i class="fas fa-user-graduate"></i> Education</h2>
+        <div class="education-timeline">
+            <div class="edu-item">
+                <h3>2022</h3>
+                <p><strong>Madhyamik Shikshan Vidyalay, Vesma</strong><br>
+                10th Grade – 63%</p>
+            </div>
+            <div class="edu-item">
+                <h3>2023</h3>
+                <p><strong>11th Grade (Medical Stream)</strong><br>
+                Achieved 52%</p>
+            </div>
+            <div class="edu-item">
+                <h3>2024</h3>
+                <p><strong>12th Grade</strong><br>
+                Dropped Out</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume">
+        <h2><i class="fas fa-file-pdf"></i> Resume</h2>
+        <p>You can download my resume below:</p>
+        <a href="Resume_20250819_122311_0000.pdf" class="resume-btn" download>
+            <i class="fas fa-download"></i> Download Resume
+        </a>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2><i class="fas fa-toolbox"></i> Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="https://storage.googleapis.com/prompt-engineering/portfolio-assets/icon-uiux.svg"
+                    alt="UI/UX Icon">
+                <h3>UI & UX Design</h3>
+                <ul>
+                    <li>Design Thinking</li>
+                    <li>Figma</li>
+                    <li>Adobe XD</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <img src="https://storage.googleapis.com/prompt-engineering/portfolio-assets/icon-graphic.svg"
+                    alt="Graphic Design Icon">
+                <h3>Graphic Design</h3>
+                <ul>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Drawing</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <img src="https://storage.googleapis.com/prompt-engineering/portfolio-assets/icon-webdev.svg"
+                    alt="Web Development Icon">
+                <h3>Web Development</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2><i class="fas fa-briefcase"></i> Projects</h2>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="uiux">UI/UX</button>
+            <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+            <button class="filter-btn" data-filter="web">Web Design</button>
+        </div>
+        <div class="portfolio-grid">
+            <div class="project-card project-card-1" data-category="uiux web">
+                <img src="eatiy-landing-page.jpg" alt="Eatiy Landing Page Design">
+            </div>
+            <div class="project-card project-card-2" data-category="uiux">
+                <video poster="ajio-poster.png" controls muted loop>
+                    <source src="ajio-prototype1.mp4 - Made with Clipchamp.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+            </div>
+            <div class="project-card project-card-3" data-category="uiux web">
+                <img src="foodio-landing-page.jpg" alt="Foodio Landing Page Design">
+            </div>
+            <div class="project-card project-card-4" data-category="graphic">
+                <img src="IMG-20250915-WA0155.jpg" alt="Event and Social Media Graphics">
+            </div>
+            <div class="project-card project-card-5" data-category="graphic">
+                <img src="IMG-20250915-WA0152.jpg" alt="Conceptual Photo Manipulation">
+            </div>
+            <div class="project-card project-card-6" data-category="graphic">
+                <img src="IMG-20250915-WA0148.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-7" data-category="graphic">
+                <img src="IMG-20250915-WA0149.jpg" alt="Brand Identity Design">
+                <!-- <img src="IMG-20250915-WA0150.jpg" alt="Brand Identity Design"> -->
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250915-WA0151.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-9" data-category="web">
+                <img src="IMG-20250915-WA0153.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-10" data-category="web">
+                <img src="IMG-20250915-WA0154.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-10" data-category="web">
+                <img src="IMG-20250915-WA0156.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-10" data-category="web">
+                <img src="IMG-20250915-WA0157.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-10" data-category="graphic">
+                <img src="IMG-20250915-WA0158.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-11" data-category="uiux">
+                <video poster="ajio-poster.png" controls muted loop>
+                    <source src="Untitled video - Made with Clipchamp (1).mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+            </div>
+            <div class="project-card project-card-12" data-category="uiux">
+                <video poster="tanisq.png" controls muted loop>
+                    <source src="Adobe XD 2025-09-16 19-20-14.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+            </div>
+            <div class="project-card project-card-13" data-category="uiux">
+                <video poster="tanisq.png" controls muted loop>
+                    <source src="Adobe XD 2025-09-16 19-27-20.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+            </div>
+            <div class="project-card project-card-14" data-category="uiux">
+                <video poster="adidas.jpg" controls muted loop>
+                    <source src="Adobe XD 2025-09-16 19-29-49.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250915-WA0143.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250915-WA0144.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250915-WA0145.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250915-WA0139.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250915-WA0140.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250915-WA0141.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250915-WA0142.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250916-WA0026.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250916-WA0027.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250916-WA0028.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250916-WA0029.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250916-WA0030.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250916-WA0031.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250916-WA0032.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250916-WA0033.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250916-WA0034.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250916-WA0035.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250916-WA0036.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250916-WA0037.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250916-WA0038.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250916-WA0039.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250916-WA0040.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250916-WA0041.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250916-WA0042.jpg" alt="Brand Identity Design">
+            </div>
+            <div class="project-card project-card-8" data-category="graphic">
+                <img src="IMG-20250916-WA0043.jpg" alt="Brand Identity Design">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        © 2025 Arun S Kushwah. All rights reserved.
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Filtering
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.portfolio-grid > div');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    const filter = button.getAttribute('data-filter');
+
+                    projectCards.forEach(card => {
+                        const categories = card.getAttribute('data-category').split(' ');
+                        if (filter === 'all' || categories.includes(filter)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+
+        // Contact Modal
+        const modal = document.getElementById('contactModal');
+        const btn = document.getElementById("contactBtn");
+        const span = document.getElementsByClassName("close-button")[0];
+
+        btn.onclick = function () {
+            modal.style.display = "flex";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Lightbox functionality with keyboard navigation
+        const lightbox = document.getElementById('lightbox');
+        const lightboxContent = document.querySelector('.lightbox-content');
+        const lightboxClose = document.querySelector('.lightbox-close');
+        const mediaElements = document.querySelectorAll('.project-card img, .project-card video');
+        let currentIndex = -1;
+
+        function openLightbox(index) {
+            const el = mediaElements[index];
+            currentIndex = index;
+            lightbox.style.display = 'flex';
+            if (el.tagName.toLowerCase() === 'img') {
+                lightboxContent.innerHTML = `<img src="${el.src}" alt="lightbox image">`;
+            } else if (el.tagName.toLowerCase() === 'video') {
+                lightboxContent.innerHTML = `<video src="${el.querySelector('source').src}" controls autoplay></video>`;
+            }
+        }
+
+        mediaElements.forEach((el, index) => {
+            el.addEventListener('click', () => openLightbox(index));
+        });
+
+        lightboxClose.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+            lightboxContent.innerHTML = '';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+                lightboxContent.innerHTML = '';
+            }
+        });
+
+        window.addEventListener('keydown', (e) => {
+            if (lightbox.style.display === 'flex') {
+                if (e.key === 'Escape') {
+                    lightbox.style.display = 'none';
+                    lightboxContent.innerHTML = '';
+                }
+                if (e.key === 'ArrowRight') {
+                    currentIndex = (currentIndex + 1) % mediaElements.length;
+                    openLightbox(currentIndex);
+                }
+                if (e.key === 'ArrowLeft') {
+                    currentIndex = (currentIndex - 1 + mediaElements.length) % mediaElements.length;
+                    openLightbox(currentIndex);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
