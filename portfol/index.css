@@ -78,7 +78,7 @@ section {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-/*     object-fit: cover; */
+    object-fit: cover;
     background-color: #4263eb;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -433,4 +433,5 @@ section {
   background-color: var(--accent-color-hover);
   transform: translateY(-2px);
 }
+
 
