@@ -11,10 +11,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="2.css">
 </head>
 
 <body>
+    <!-- Sticky Navbar -->
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <!-- Hamburger Menu (LEFT SIDE) -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Logo -->
+            <a href="#" class="logo">Portfolio <span class="name-tag">| Arun S Kushwah</span></a>
+
+            <!-- Nav Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contactBtn">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
     <div class="container">
         <header class="hero">
             <div class="hero-text">
@@ -49,7 +79,7 @@
     </div>
 
     <!-- About Section -->
-    <section class="about">
+    <section class="about" id="about">
         <h2><i class="fas fa-circle-info"></i> About Me</h2>
         <p>
             I have just completed a Frontend Web Development course and am currently learning Backend
@@ -60,29 +90,29 @@
     </section>
 
     <!-- Education Section -->
-    <section class="education">
+    <section class="education" id="education">
         <h2><i class="fas fa-user-graduate"></i> Education</h2>
         <div class="education-timeline">
             <div class="edu-item">
                 <h3>2022</h3>
                 <p><strong>Madhyamik Shikshan Vidyalay, Vesma</strong><br>
-                10th Grade – 63%</p>
+                    10th Grade – 63%</p>
             </div>
             <div class="edu-item">
                 <h3>2023</h3>
                 <p><strong>11th Grade (Medical Stream)</strong><br>
-                Achieved 52%</p>
+                    Achieved 52%</p>
             </div>
             <div class="edu-item">
                 <h3>2024</h3>
                 <p><strong>12th Grade</strong><br>
-                Dropped Out</p>
+                    Dropped Out</p>
             </div>
         </div>
     </section>
 
     <!-- Resume Section -->
-    <section class="resume">
+    <section class="resume" id="resume">
         <h2><i class="fas fa-file-pdf"></i> Resume</h2>
         <p>You can download my resume below:</p>
         <a href="Resume_20250819_122311_0000.pdf" class="resume-btn" download>
@@ -91,7 +121,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section class="skills">
+    <section class="skills" id="skills">
         <h2><i class="fas fa-toolbox"></i> Skills</h2>
         <div class="skills-grid">
             <div class="skill-card">
@@ -128,7 +158,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="projects">
+    <section class="projects" id="projects">
         <h2><i class="fas fa-briefcase"></i> Projects</h2>
         <div class="project-filters">
             <button class="filter-btn active" data-filter="all">All</button>
@@ -137,161 +167,411 @@
             <button class="filter-btn" data-filter="web">Web Design</button>
         </div>
         <div class="portfolio-grid">
-            <div class="project-card project-card-1" data-category="uiux web">
+
+            <!-- UI/UX + Web -->
+            <div class="project-card project-card-1" data-category="uiux web" data-title="Eatiy Landing Page"
+                data-story="A modern landing page for a food delivery startup. Focused on responsive layouts, bold typography, and a clean visual hierarchy to improve user retention.">
                 <img src="eatiy-landing-page.jpg" alt="Eatiy Landing Page Design">
+                <div class="project-info">
+                    <h3>Eatiy - Health Food Landing Page</h3>
+                    <p>A vibrant, user-centric landing page for a healthy food brand. The design uses an energetic color
+                        palette and a clean layout to motivate users and guide them towards signing up.</p>
+                </div>
             </div>
-            <div class="project-card project-card-2" data-category="uiux">
+
+            <div class="project-card project-card-2" data-category="uiux" data-title="AJIO App Prototype"
+                data-story="Redesigned mobile shopping app prototype for AJIO. Enhanced navigation, simplified checkout, and clean UI for a smoother shopping experience.">
                 <video poster="ajio-poster.png" controls muted loop>
                     <source src="ajio-prototype1.mp4 - Made with Clipchamp.mp4" type="video/mp4">
-                    Your browser does not support video.
                 </video>
+                <div class="project-info">
+                    <h3>AJIO App Prototype</h3>
+                    <p>A conceptual redesign of the AJIO fashion e-commerce app, focusing on creating a cleaner, more
+                        intuitive, and premium user experience. The prototype showcases improved navigation and a
+                        modern, minimalist aesthetic.</p>
+                </div>
             </div>
-            <div class="project-card project-card-3" data-category="uiux web">
+
+            <div class="project-card project-card-3" data-category="uiux web" data-title="Foodio Landing Page"
+                data-story="A colorful landing page created for a food brand. Experimented with engaging layouts, playful colors, and responsive design to attract younger audiences.">
                 <img src="foodio-landing-page.jpg" alt="Foodio Landing Page Design">
+                <div class="project-info">
+                    <h3>Foodio Landing Page</h3>
+                    <p>Colorful UI design that highlights food brand identity and product focus.A landing page concept
+                        designed to be fresh, appetizing, and efficient. High-quality photography and a streamlined
+                        layout make the ordering process simple and visually appealing.</p>
+                </div>
             </div>
-            <div class="project-card project-card-4" data-category="graphic">
+
+            <!-- Graphics -->
+            <div class="project-card project-card-4" data-category="graphic" data-title="Event & Social Media Graphics"
+                data-story="Designed posters and digital creatives for events and campaigns. Each design balanced typography, color, and imagery for maximum audience engagement.">
                 <img src="IMG-20250915-WA0155.jpg" alt="Event and Social Media Graphics">
+                <div class="project-info">
+                    <h3>Event Posters</h3>
+                    <p>Engaging poster and social creatives for events and digital campaigns.</p>
+                </div>
             </div>
-            <div class="project-card project-card-5" data-category="graphic">
+
+            <div class="project-card project-card-5" data-category="graphic" data-title="Photo Manipulation Art"
+                data-story="Surreal digital art created using advanced Photoshop compositing. Experimented with creative storytelling through layered visuals and lighting effects.">
                 <img src="IMG-20250915-WA0152.jpg" alt="Conceptual Photo Manipulation">
+                <div class="project-info">
+                    <h3>Modern Brand Identity</h3>
+                    <p>A selection of branding projects including minimalist logos and professional business cards. Each
+                        design focuses on creating a strong first impression with clean typography and modern
+                        aesthetics.</p>
+                </div>
             </div>
-            <div class="project-card project-card-6" data-category="graphic">
+
+            <div class="project-card project-card-6" data-category="graphic" data-title="Corporate Brand Identity"
+                data-story="Developed a professional corporate identity kit including logos, stationery, and branding guidelines for consistent communication.">
                 <img src="IMG-20250915-WA0148.jpg" alt="Brand Identity Design">
+                <div class="project-info">
+                    <h3>Corporate Identity</h3>
+                    <p>Logo, stationery, and branding guidelines for a corporate brand.</p>
+                </div>
             </div>
-            <div class="project-card project-card-7" data-category="graphic">
-                <img src="IMG-20250915-WA0149.jpg" alt="Brand Identity Design">
-                <!-- <img src="IMG-20250915-WA0150.jpg" alt="Brand Identity Design"> -->
+
+            <div class="project-card project-card-7" data-category="graphic" data-title="Logo Exploration"
+                data-story="Explored multiple logo concepts for creative startups. Focused on adaptable designs that could scale across web, print, and packaging.">
+                <img src="IMG-20250915-WA0149.jpg" alt="Logo Design Concepts">
+                <div class="project-info">
+                    <h3>Logo Concepts</h3>
+                    <p>Creative logo explorations adaptable for digital and print media.</p>
+                </div>
             </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250915-WA0151.jpg" alt="Brand Identity Design">
+
+            <div class="project-card project-card-8" data-category="graphic" data-title="Product Packaging Design"
+                data-story="Designed packaging mockups showcasing branding applied to real products. Focused on storytelling, brand recall, and shelf appeal.">
+                <img src="IMG-20250915-WA0151.jpg" alt="Product Packaging Design">
+                <div class="project-info">
+                    <h3>Brand Identity</h3>
+                    <p>A selection of branding projects including minimalist logos and professional business cards. Each
+                        design focuses on creating a strong first impression with clean typography and modern
+                        aesthetics.</p>
+                </div>
             </div>
-            <div class="project-card project-card-9" data-category="web">
-                <img src="IMG-20250915-WA0153.jpg" alt="Brand Identity Design">
+
+            <!-- Web -->
+            <div class="project-card project-card-9" data-category="web" data-title="Portfolio Layout"
+                data-story="Built a responsive portfolio layout using CSS Grid. Optimized for usability and adaptability across multiple devices and screen sizes.">
+                <img src="IMG-20250915-WA0153.jpg" alt="Portfolio Layout">
+                <div class="project-info">
+                    <h3>Portfolio Layout</h3>
+                    <p>Responsive layout experiment for modern portfolio websites.</p>
+                </div>
             </div>
-            <div class="project-card project-card-10" data-category="web">
-                <img src="IMG-20250915-WA0154.jpg" alt="Brand Identity Design">
+
+            <div class="project-card project-card-10" data-category="web" data-title="Website Mockups"
+                data-story="Created multiple website mockups focusing on clean UI and usability. Designed layouts for different industries while ensuring accessibility.">
+                <img src="IMG-20250915-WA0154.jpg" alt="Website Mockup">
+                <div class="project-info">
+                    <h3>Website Mockups</h3>
+                    <p>Modern and clean mockups designed for usability and clarity.</p>
+                </div>
             </div>
-            <div class="project-card project-card-10" data-category="web">
-                <img src="IMG-20250915-WA0156.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-10" data-category="web">
-                <img src="IMG-20250915-WA0157.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-10" data-category="graphic">
-                <img src="IMG-20250915-WA0158.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-11" data-category="uiux">
-                <video poster="ajio-poster.png" controls muted loop>
+
+            <!-- UI/UX Prototypes -->
+            <div class="project-card project-card-11" data-category="uiux" data-title="Shopping Prototype"
+                data-story="An interactive shopping prototype made in Adobe XD. Features easy browsing, product filtering, and a simplified checkout process.">
+                <video poster="Screenshot 2025-09-18 221120.png" controls muted loop>
                     <source src="Untitled video - Made with Clipchamp (1).mp4" type="video/mp4">
-                    Your browser does not support video.
                 </video>
+                <div class="project-info">
+                    <h3>Shopping Prototype</h3>
+                    <p>Adobe XD prototype with clean shopping flow and usability improvements.</p>
+                </div>
             </div>
-            <div class="project-card project-card-12" data-category="uiux">
+
+            <div class="project-card project-card-12" data-category="uiux" data-title="Tanishq Website Prototype"
+                data-story="E-commerce prototype for Tanishq jewelry. Designed elegant layouts and modern navigation that emphasize a luxury shopping feel.">
                 <video poster="tanisq.png" controls muted loop>
                     <source src="Adobe XD 2025-09-16 19-20-14.mp4" type="video/mp4">
-                    Your browser does not support video.
                 </video>
+                <div class="project-info">
+                    <h3>Tanishq Prototype</h3>
+                    <p>Elegant jewelry e-commerce prototype with modern layouts.</p>
+                </div>
             </div>
-            <div class="project-card project-card-13" data-category="uiux">
+
+            <div class="project-card project-card-13" data-category="uiux" data-title="Tanishq Redesign Flow"
+                data-story="Explored alternate navigation flows for Tanishq’s online store. The focus was on smoother product discovery and premium feel.">
                 <video poster="tanisq.png" controls muted loop>
                     <source src="Adobe XD 2025-09-16 19-27-20.mp4" type="video/mp4">
-                    Your browser does not support video.
                 </video>
+                <div class="project-info">
+                    <h3>Tanishq Redesign</h3>
+                    <p>Alternate UX flow for luxury shopping with premium design cues.</p>
+                </div>
             </div>
-            <div class="project-card project-card-14" data-category="uiux">
+
+            <div class="project-card project-card-14" data-category="uiux" data-title="Adidas Concept App"
+                data-story="Minimalist concept app for Adidas focusing on bold visuals and simplicity. Designed for youth engagement with modern, sleek layouts.">
                 <video poster="adidas.jpg" controls muted loop>
                     <source src="Adobe XD 2025-09-16 19-29-49.mp4" type="video/mp4">
-                    Your browser does not support video.
                 </video>
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250915-WA0143.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250915-WA0144.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250915-WA0145.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250915-WA0139.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250915-WA0140.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250915-WA0141.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250915-WA0142.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250916-WA0026.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250916-WA0027.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250916-WA0028.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250916-WA0029.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250916-WA0030.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250916-WA0031.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250916-WA0032.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250916-WA0033.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250916-WA0034.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250916-WA0035.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250916-WA0036.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250916-WA0037.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250916-WA0038.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250916-WA0039.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250916-WA0040.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250916-WA0041.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250916-WA0042.jpg" alt="Brand Identity Design">
-            </div>
-            <div class="project-card project-card-8" data-category="graphic">
-                <img src="IMG-20250916-WA0043.jpg" alt="Brand Identity Design">
+                <div class="project-info">
+                    <h3>Adidas Concept</h3>
+                    <p>Minimalist Adidas app design with bold visuals and smooth UI.</p>
+                </div>
             </div>
 
-        </div>
+            <!-- Graphic Projects Continued -->
+            <div class="project-card project-card-15" data-category="graphic" data-title="Creative Brand Identity"
+                data-story="A branding project exploring logo systems, typography, and color harmony. The goal was to deliver a versatile identity adaptable across web and print.">
+                <img src="IMG-20250915-WA0143.jpg" alt="Creative Brand Identity">
+                <div class="project-info">
+                    <h3>Cultural & E-Sports Graphics</h3>
+                    <p>Exploration of logo, typography, and color systems for consistent branding.A collection of
+                        vibrant graphics for social media and event promotion, including posters for cultural festivals
+                        like Diwali and Dussehra, and a high-energy design for an e-sports tournament.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-16" data-category="graphic" data-title="Visual Identity Design"
+                data-story="Worked on defining a strong visual brand language with emphasis on typography and minimalism. Designs intended to maintain clarity and recognition.">
+                <img src="IMG-20250915-WA0144.jpg" alt="Visual Identity Design">
+                <div class="project-info">
+                    <h3>Visual Identity</h3>
+                    <p>Clean, typography-driven branding designs for professional identity.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-17" data-category="graphic" data-title="Logo & Stationery Kit"
+                data-story="Developed a comprehensive branding kit including logo variations, stationery designs, and brand marks to establish trust and recognition.">
+                <img src="IMG-20250915-WA0145.jpg" alt="Logo & Stationery Kit">
+                <div class="project-info">
+                    <h3>Logo Kit</h3>
+                    <p>Full branding package including stationery and scalable logo variations.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-18" data-category="graphic" data-title="Marketing Collateral"
+                data-story="Designed brochures, flyers, and campaign visuals for corporate promotions. Balanced branding consistency with engaging layouts for target audiences.">
+                <img src="IMG-20250915-WA0139.jpg" alt="Marketing Collateral">
+                <div class="project-info">
+                    <h3>Marketing Collateral</h3>
+                    <p>Brochures and flyers designed to support corporate promotions.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-19" data-category="graphic" data-title="Product Branding Concepts"
+                data-story="Explored brand packaging designs for consumer products. Focused on creating packaging that communicates value and shelf impact.">
+                <img src="IMG-20250915-WA0140.jpg" alt="Product Branding Concepts">
+                <div class="project-info">
+                    <h3>Product Branding</h3>
+                    <p>Packaging and branding visuals designed for consumer product appeal.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-20" data-category="graphic" data-title="Visual Branding Suite"
+                data-story="Delivered a consistent set of brand identity designs including typography, color palettes, and supporting graphics for online and offline use.">
+                <img src="IMG-20250915-WA0141.jpg" alt="Visual Branding Suite">
+                <div class="project-info">
+                    <h3>Visual Branding</h3>
+                    <p>Identity suite including typography, colors, and supporting visuals.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-21" data-category="graphic" data-title="Minimalist Identity"
+                data-story="A minimalist design approach for branding. Used clean lines, neutral tones, and simple logos for a professional yet timeless brand identity.">
+                <img src="IMG-20250915-WA0142.jpg" alt="Minimalist Identity">
+                <div class="project-info">
+                    <h3>Minimalist Branding</h3>
+                    <p>Sleek and timeless designs with a focus on minimal identity principles.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-22" data-category="graphic" data-title="Packaging Mockups"
+                data-story="Created packaging mockups to showcase product branding in real-world contexts. Focused on visual hierarchy and consumer-focused layouts.">
+                <img src="IMG-20250916-WA0026.jpg" alt="Packaging Mockups">
+                <div class="project-info">
+                    <h3>Conceptual Digital Art</h3>
+                    <p>An exploration of surreal themes through advanced photo manipulation. This collection includes
+                        double exposures and creative compositions that showcase technical skill and artistic vision..
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-23" data-category="graphic" data-title="Logo & Branding Variations"
+                data-story="Produced multiple logo and branding variations for testing in real-world applications including signage, packaging, and business cards.">
+                <img src="IMG-20250916-WA0027.jpg" alt="Logo & Branding Variations">
+                <div class="project-info">
+                    <h3>Logo Variations</h3>
+                    <p>Explored multiple branding directions through logo variations.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-24" data-category="graphic" data-title="Creative Collateral"
+                data-story="Designed visual materials such as posters and banners. Balanced creativity with professional branding to create versatile assets.">
+                <img src="IMG-20250916-WA0028.jpg" alt="Creative Collateral">
+                <div class="project-info">
+                    <h3>Creative Collateral</h3>
+                    <p>Design assets including posters and banners for marketing use.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-25" data-category="graphic" data-title="Identity Mockups"
+                data-story="Created brand identity mockups to demonstrate logo and typography in real-world contexts, ensuring versatility across mediums.">
+                <img src="IMG-20250916-WA0029.jpg" alt="Identity Mockups">
+                <div class="project-info">
+                    <h3>Identity Mockups</h3>
+                    <p>Showcased branding adaptability with practical mockups.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-26" data-category="graphic" data-title="Typography Branding"
+                data-story="Focused on branding driven by typography. Selected fonts and spacing to establish a clear and modern brand tone.">
+                <img src="IMG-20250916-WA0030.jpg" alt="Typography Branding">
+                <div class="project-info">
+                    <h3>Typography Branding</h3>
+                    <p>Brand identity projects emphasizing typography and spacing.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-27" data-category="graphic" data-title="Marketing Identity Kit"
+                data-story="Developed a kit of marketing assets for brand campaigns including posters, brochures, and stationery. Created for cohesive communication.">
+                <img src="IMG-20250916-WA0031.jpg" alt="Marketing Identity Kit">
+                <div class="project-info">
+                    <h3>Marketing Kit</h3>
+                    <p>Comprehensive marketing identity package with key assets.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-28" data-category="graphic" data-title="Visual Mockup Collection"
+                data-story="Designed and curated mockups to showcase brand consistency. Emphasis placed on professional presentation for client pitches.">
+                <img src="IMG-20250916-WA0032.jpg" alt="Visual Mockup Collection">
+                <div class="project-info">
+                    <h3>Mockup Collection</h3>
+                    <p>Curated mockups to present cohesive branding in context.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-29" data-category="graphic" data-title="Creative Identity Kit"
+                data-story="Identity kit including logos, typography, and stationery applications. Designed to demonstrate how branding works across multiple assets.">
+                <img src="IMG-20250916-WA0033.jpg" alt="Creative Identity Kit">
+                <div class="project-info">
+                    <h3>Identity Kit</h3>
+                    <p>Complete brand identity kit showcasing logos and stationery.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-30" data-category="graphic" data-title="Brand Visuals"
+                data-story="Created a set of visuals combining photography, logos, and typography to establish a strong, recognizable brand.">
+                <img src="IMG-20250916-WA0034.jpg" alt="Brand Visuals">
+                <div class="project-info">
+                    <h3>Brand Visuals</h3>
+                    <p>Photography-driven branding visuals combined with typography.</p>
+                </div>
+            </div>
+
+            <!-- Graphic Projects Final Batch -->
+            <div class="project-card project-card-31" data-category="graphic" data-title="Professional Brand Mockups"
+                data-story="Created mockups that bring branding to life in real scenarios. Showcased how logos and visual identity adapt to merchandise and signage.">
+                <img src="IMG-20250916-WA0035.jpg" alt="Professional Brand Mockups">
+                <div class="project-info">
+                    <h3>Brand Mockups</h3>
+                    <p>Practical brand identity mockups applied to signage and products.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-32" data-category="graphic" data-title="Corporate Visual Identity"
+                data-story="Developed a professional visual identity with a clean logo system and supporting brand graphics. Emphasis on scalability and corporate tone.">
+                <img src="IMG-20250916-WA0036.jpg" alt="Corporate Visual Identity">
+                <div class="project-info">
+                    <h3>Corporate Identity</h3>
+                    <p>Visual identity system designed for professional corporate use.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-33" data-category="graphic" data-title="Creative Poster Design"
+                data-story="Designed a creative poster series exploring color theory, composition, and typography. Intended for event promotions and modern advertising.">
+                <img src="IMG-20250916-WA0037.jpg" alt="Creative Poster Design">
+                <div class="project-info">
+                    <h3>Poster Design</h3>
+                    <p>Creative poster layouts focusing on typography and composition.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-34" data-category="graphic" data-title="Minimal Brand Kit"
+                data-story="A minimal brand kit featuring simplified logos, neutral tones, and clean design language. Built to be flexible across platforms.">
+                <img src="IMG-20250916-WA0038.jpg" alt="Minimal Brand Kit">
+                <div class="project-info">
+                    <h3>Minimal Kit</h3>
+                    <p>Neutral-toned brand identity kit with simple, timeless logos.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-35" data-category="graphic" data-title="Identity Poster Series"
+                data-story="Poster series created to communicate brand values visually. Combined bold typography with graphical elements for striking communication.">
+                <img src="IMG-20250916-WA0039.jpg" alt="Identity Poster Series">
+                <div class="project-info">
+                    <h3>Poster Series</h3>
+                    <p>Brand-driven posters that communicate values with strong visuals.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-36" data-category="graphic" data-title="Creative Branding Concepts"
+                data-story="Developed creative branding concepts focusing on playful colors, geometric shapes, and unique typography. Intended for lifestyle brands.">
+                <img src="IMG-20250916-WA0040.jpg" alt="Creative Branding Concepts">
+                <div class="project-info">
+                    <h3>Creative Branding</h3>
+                    <p>Playful and geometric branding experiments for lifestyle brands.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-37" data-category="graphic" data-title="Stationery Identity Design"
+                data-story="Created professional stationery layouts including letterheads, envelopes, and business cards. Focused on consistency with core branding.">
+                <img src="IMG-20250916-WA0041.jpg" alt="Stationery Identity Design">
+                <div class="project-info">
+                    <h3>Stationery Design</h3>
+                    <p>Letterhead, business card, and envelope designs for corporate use.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-38" data-category="graphic" data-title="Marketing Visual Assets"
+                data-story="Produced visual assets like posters, banners, and digital creatives. Designed to be versatile across campaigns and adaptable to multiple formats.">
+                <img src="IMG-20250916-WA0042.jpg" alt="Marketing Visual Assets">
+                <div class="project-info">
+                    <h3>Marketing Assets</h3>
+                    <p>Versatile visuals created for brand campaigns and promotions.</p>
+                </div>
+            </div>
+
+            <div class="project-card project-card-39" data-category="graphic" data-title="Product Branding Showcase"
+                data-story="Showcased product branding through mockups. Demonstrated how identity design translates onto packaging and merchandise effectively.">
+                <img src="IMG-20250916-WA0043.jpg" alt="Product Branding Showcase">
+                <div class="project-info">
+                    <h3>Branding Showcase</h3>
+                    <p>Surreal photo artwork blending multiple visuals into one creative composition.</p>
+                </div>
+            </div>
+
+        </div> <!-- end .portfolio-grid -->
     </section>
 
-    <!-- Footer -->
-    <div class="footer">
-        © 2025 Arun S Kushwah. All rights reserved.
-    </div>
+
+    <!-- Modern Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Arun S Kushwah. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/arun_kushavah_/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <!-- Lightbox -->
     <div id="lightbox" class="lightbox">
         <span class="lightbox-close">&times;</span>
         <div class="lightbox-content"></div>
+        <div class="lightbox-caption">
+            <h3 id="lightbox-title"></h3>
+            <p id="lightbox-story"></p>
+        </div>
     </div>
 
     <!-- Scripts -->
@@ -348,13 +628,21 @@
 
         function openLightbox(index) {
             const el = mediaElements[index];
+            const parentCard = el.closest('.project-card');
+            const title = parentCard.getAttribute('data-title') || '';
+            const story = parentCard.getAttribute('data-story') || '';
+
             currentIndex = index;
             lightbox.style.display = 'flex';
+
             if (el.tagName.toLowerCase() === 'img') {
                 lightboxContent.innerHTML = `<img src="${el.src}" alt="lightbox image">`;
             } else if (el.tagName.toLowerCase() === 'video') {
                 lightboxContent.innerHTML = `<video src="${el.querySelector('source').src}" controls autoplay></video>`;
             }
+
+            document.getElementById('lightbox-title').textContent = title;
+            document.getElementById('lightbox-story').textContent = story;
         }
 
         mediaElements.forEach((el, index) => {
@@ -389,6 +677,35 @@
                 }
             }
         });
+
+
+
+        // Close nav when a link is clicked (mobile only)
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navLinksContainer.classList.remove("show");
+            });
+        });
+
+
+        // Hamburger toggle
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navLinks.classList.toggle("show");
+        });
+
+        // Close nav when a link is clicked (mobile only)
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navLinks.classList.remove("show");
+            });
+        });
     </script>
 </body>
+
 </html>
